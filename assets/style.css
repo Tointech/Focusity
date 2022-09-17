@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Helvetica Neue";
+    background-color: #f4f4f5
+}
+
+body > div {
+    margin: auto;
+}
+
+.map {
+    width: 100%;
+}
+
+.logo {
+    position: absolute;
+    top: 0.5em;
+    left: 1em;
+    width: 50px;
+}
+
+.account {
+    position: absolute;
+    top: 0.5em;
+    right: 1em;
+    width: 100px;
+}
+
+.ava {
+    position: absolute;
+    top: 0.5em;
+    right: 1em;
+    width: 100px;
+}
