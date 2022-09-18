@@ -449,6 +449,7 @@ var pomodoro = {
       this.typeDisplay = document.getElementById("type");
       this.startCountdownBtn = document.getElementById("start-session");
       this.countdownContainer = document.getElementById("countdown-container");
+      this.exitCountdownBtn = document.getElementById("exit-session");
     },
     timerVariables: function () {
   
@@ -473,7 +474,7 @@ var pomodoro = {
       this.countdownDisplay.onclick=  pomodoro.startCountdown;
         
       this.startCountdownBtn.onclick = pomodoro.startOrStop;
-      
+      this.exitCountdownBtn.onclick = function () {window.location.href = "index.html";}
   
     },
    
