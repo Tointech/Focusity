@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
+
 :root {
     --font-style: 'Roboto', sans-serif;
 
@@ -17,6 +18,7 @@
     --black: #5B5759;
     --grey: #8A8894;
     --light-grey: #D9D9D9;
+    --gradient-color: linear-gradient(90deg, #FA897B 0%, #FFDD94 100%);
 
     --heading-1: 4rem;
     --heading-2: 3rem;
@@ -34,67 +36,191 @@
     --border-radius: 0.5rem;
 
     --drop-shadow: box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    --blur: filter: blur(5px);
 }
 
 * {
-    padding: 0;
-    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
+}
+
+html {
+    max-width: 100%;
+    background-color: var(--bg-color);
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 body {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
     font-family: var(--font-style);
-    background-color: var(--background-red);
+    color: var(--background-red);
+    position: relative;
 }
 
-body > div {
+body>div {
     margin: auto;
 }
 
-.map {
-    width: 100%;
+.bg {
+    position: absolute;
+    width: 1533px;
+    height: 798px;
+    left: -7px;
+    top: -5px;
+    z-index: -1000;
+}
+
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+p {
+    -webkit-font-smoothing: antialiased
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 5.5rem;
 }
 
 .logo {
-    position: absolute;
-    top: 20px;
-    left: 25px;
-    height: 5%;
-    width: auto;
-}
-
-.account {
-    position: absolute;
-    top: 20px;
-    right: 35px;
-    height: 13%;
-    width: auto;
-}
-
-.ava {
-    position: absolute;
-    top: 30px;
-    right: 44px;
-    height: 50%px;
-    width: auto;
+    max-height: fit-content;
 }
 
 .name {
     position: absolute;
-    top: 47px;
-    right: 145px;
-    font-size: 18px;
-    color: #f4f4f5;
-    font-family: var(--font-style);
+    right: 13.5%;
+    top: 4%;
+    font-size: var(--normal-text);
+    line-height: var(--line-height);
+    color: var(--white);
+}
+
+.ava {
+    position: absolute;
+    top: 2%;
+    right: 6%;
 }
 
 .coin {
     position: absolute;
-    top: 90px;
-    right: 150px;
+    right: 13.5%;
+    top: 9%;
     font-size: 18px;
     color: var(--primary-yellowlow);
     font-family: var(--font-style);
