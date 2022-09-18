@@ -22,11 +22,13 @@ body > div {
     padding: 32px 0;
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .first {
     padding: 4px 16px;
     flex: 1;
+    margin-right: 24px;
 }
 
 .second {
@@ -47,7 +49,7 @@ body > div {
 
 .right {
     padding-top: 30px;
-    height: 80%;
+    height: 70%;
 }
 
 p {
@@ -60,4 +62,28 @@ p {
 
 .signup {
     padding-right: 30px;
+}
+
+.bold {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 100%;
+
+    color: #FA897B;
+}
+
+.title {
+    font-family: 'Roboto';
+    font-style: black;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 100%;
+    text-transform: uppercase;
+
+    background: linear-gradient(90deg, #FA897B 0%, #FFDD94 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
