@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Pomodoro</title>
+    <link rel="stylesheet" type="text/css" href="./assets/App.css">
+    <link rel="shortcut icon" href="./assets/materials/Icon.ico" type="image/x-icon">
+</head>
+
+<body>
+    
+    <div class="container">
+
+        <p>Stay focused, the city will be explored.</p>
+        <!-- slider app container -->
+        <div id="test">
+        <div id="app">        
+            <img src="./assets/materials/City.svg">
+        </div>
+    </div>
+        <div id="countdown-container">
+            <time id="countdown">60:00</time>
+          </div>
+          <div id="button-container">
+            <button id="start-session" type="button">START</button>
+          </div>
+    
+    </div>
+    
+    <script type="text/javascript" src="./assets/App.js"></script>
+
+    <script>
+        // slider app options
+        const opts = {
+            DOMselector: '#app',
+            sliders: [
+                {
+                    radius: 146,
+                    min: 0,
+                    max: 100,
+                    step: 10,
+                    initialValue: 50,
+                    color: '#FA897B',
+                    displayName: 'Value 1'
+                }
+            ]
+        };
+
+        // instantiate the slider
+        const slider = new Slider(opts);
+        
+        slider.draw();
+        
+    </script>
+</body>
+
+</html>

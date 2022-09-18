@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+*, 
+*::before, 
+*::after {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-family: 'Roboto', sans-serif; 
+  background-color: #FEDCCA;
+  margin-top: 50px;
+}
+
+.container {
+  width: 588px;
+  height: 591px;
+  display: grid;
+  row-gap: 0 px;
+  background: #FEDCCA;
+  z-index: 0;
+  left: 426px;
+top: 160px;
+}
+
+#app {
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+button {
+  display: inline-block;
+  height: 38px;
+  padding: 0 10px;
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px  ; 
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: #FA897B;
+  border-radius: 10px;
+  border: 1px solid #FA897B;
+  cursor: pointer;
+  width: 180px;
+  height: 48px; 
+}
+button:hover {
+  background: #D75D59;
+}
+button[disabled] {
+  cursor: not-allowed;
+  background: #a54f4f;
+}
+
+#button-container {
+  margin: 0 auto;
+  display: block;
+
+}
+#countdown-container{
+  display: block;
+  text-align: center;
+  margin: 0 ;
+  margin-top: 24px;
+  justify-content: center;
+
+}
+#button-container {
+  text-align: center;
+  margin: 0 ;
+  display: block;
+margin-bottom: 36px;
+
+}
+#countdown {
+  font-size: 4em;
+  cursor: pointer;
+  text-align: center;
+}
+p{
+  display: block;
+  text-align: center;
+  justify-content: center;
+   margin: 0 auto;
+width: 300px;
+height: 30px;
+left: 591px;
+top: 196px;
+margin-top: 36px;
+font-family: 'Roboto';
+font-style: italic;
+font-weight: 400;
+font-size: 16px;
+line-height: 30px;
+/* identical to box height, or 188% */
+
+
+/* Black */
+
+color: #5B5759;
+
+}
+
+.slider__legend {
+  padding: 1rem 3rem 0 0;
+  list-style: none;
+}
+
+.slider__legend h2 {
+  margin-bottom: 1rem;
+}
+
+.slider__legend li {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.slider__legend li span {
+  display: inline-block;
+}
+
+.slider__legend li span:first-child {
+  height: 20px;
+  width: 20px;
+  margin-bottom: -2px;
+}
+
+.slider__legend li span:nth-child(2) {
+  margin: 0 0.5rem;
+}
+
+.slider__legend li span:last-child {
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums lining-nums;
+  min-width: 60px;
+}
+
+#countdown
+{
+  font-family: 'Roboto', sans-serif;
+  color: #5B5759;
+  font-size: 4 rem;
+ 
+}
+
+img{
+  z-index: -1;
+  position: absolute;
+}
+#index
+{
+  z-index: 1;
+}
+#test
+{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  width: 310px;
+  height: 310px;
+}
