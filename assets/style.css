@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 :root {
     --font-style: 'Roboto', sans-serif;
@@ -36,9 +35,6 @@
 
     --drop-shadow: box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-=======
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
->>>>>>> b6ec8a5644872427a56184c8cb687b4d6193de76
 
 * {
     padding: 0;
@@ -50,8 +46,8 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f5;
+    font-family: var(--font-style);
+    background-color: var(--background-red);
 }
 
 body > div {
@@ -92,7 +88,7 @@ body > div {
     right: 145px;
     font-size: 18px;
     color: #f4f4f5;
-    font-family: "Roboto";
+    font-family: var(--font-style);
 }
 
 .coin {
@@ -100,6 +96,6 @@ body > div {
     top: 90px;
     right: 150px;
     font-size: 18px;
-    color: #f4f4f5;
-    font-family: "Roboto";
+    color: var(--primary-yellowlow);
+    font-family: var(--font-style);
 }
