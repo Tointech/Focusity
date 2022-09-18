@@ -108,7 +108,7 @@ body > div {
 /* Timer */
 .timer {
     position: absolute;
-    width: 4%;
+    width: 9%;
     bottom: 30px;
     right: 30px;
 }
