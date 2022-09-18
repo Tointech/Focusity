@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 :root {
     --font-style: 'Roboto', sans-serif;
@@ -36,9 +35,6 @@
 
     --drop-shadow: box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-=======
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
->>>>>>> b6ec8a5644872427a56184c8cb687b4d6193de76
 
 * {
     padding: 0;
@@ -50,12 +46,17 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f5;
+    font-family: var(--font-style);
+    background-color: var(--white);
 }
 
 body > div {
     margin: auto;
+}
+
+.main {
+    position: absolute;
+    width: 100%;
 }
 
 .map {
@@ -89,10 +90,10 @@ body > div {
 .name {
     position: absolute;
     top: 47px;
-    right: 145px;
+    right: 150px;
     font-size: 18px;
-    color: #f4f4f5;
-    font-family: "Roboto";
+    color: var(--white);
+    font-family: var(--font-style);
 }
 
 .coin {
@@ -100,6 +101,32 @@ body > div {
     top: 90px;
     right: 150px;
     font-size: 18px;
-    color: #f4f4f5;
-    font-family: "Roboto";
+    color: var(--white);
+    font-family: var(--font-style);
+}
+
+.popup {
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    background-color: var(--primary-red);
+    visibility: hidden;
+    border-radius: 1%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+}
+
+.main.blur {
+    filter: blur(2px);
+    pointer-events: none;
+    user-select: none;
+}
+
+.popup.active {
+    top: 35%;
+    left: 30%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
 }
